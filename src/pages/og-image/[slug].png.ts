@@ -1,10 +1,10 @@
+import { siteConfig } from "@/site-config";
+import { getFormattedDate } from "@/utils";
+import { Resvg } from "@resvg/resvg-js";
 import type { APIContext, GetStaticPathsResult } from "astro";
 import { getCollection, getEntryBySlug } from "astro:content";
 import satori, { SatoriOptions } from "satori";
 import { html } from "satori-html";
-import { Resvg } from "@resvg/resvg-js";
-import { siteConfig } from "@/site-config";
-import { getFormattedDate } from "@/utils";
 
 const monoFontReg = await fetch(
 	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-400-normal.ttf"
